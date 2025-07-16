@@ -21,7 +21,7 @@ for i in items:
     if i not in ids:
         co=items.count(i)
         total+=(grocery[i]["Price"]*co)
-        print(f"{grocery[i]["product"]}-{co}*{grocery[i]["Price"]} = {grocery[i]["Price"]}")
+        print(f"{grocery[i]["product"]}-{co}*{grocery[i]["Price"]} = {grocery[i]["Price"]}*{co}")
        
 
 print("total bill: ", total)

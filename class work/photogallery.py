@@ -12,4 +12,5 @@ print("photo Gallery:")
 for i in range(len(photos)):
     print(f"{i+1}. {photos[i]}")
 selection = int(input("enter photos id:"))
-print(photos[selection])
+for selection in photos:
+    print(photos[selection])
