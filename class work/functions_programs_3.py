@@ -1,3 +1,4 @@
+
 #sum of digits
 def sumof(n):
     if n==0:
@@ -26,3 +27,34 @@ def gcd(a,b):
 a=int(input())
 b=int(input())
 print(gcd(a,b))
+
+
+#fibonacci series
+def fibonacci(n):
+    a=0
+    b=1
+    if n==1:
+        print(a)
+    elif n>=2:
+        print(a)
+        print(b)
+        for i in range(n-2):
+            c=a+b
+            print(c)
+            a=b
+            b=c
+n=int(input())
+fibonacci(n)
+
+
+
+#sum of n natural numbers
+def sumofnatural(n):
+    sum=0
+    for i in range(1,n+1):
+        sum +=i
+        
+    return sum
+        
+n=int(input())
+print(sumofnatural(n))
