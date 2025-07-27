@@ -1,5 +1,6 @@
 
 #sum of digits
+
 def sumof(n):
     if n==0:
         return 0
@@ -58,3 +59,31 @@ def sumofnatural(n):
         
 n=int(input())
 print(sumofnatural(n))
+
+
+# maximum of three numbers
+def maximum(a,b,c):
+    return max(a,b,c)
+num = input().split()
+a=int(num[0])
+b=int(num[1])
+c=int(num[2])
+print(maximum(a,b,c))
+
+
+def fib(n):
+    a=0
+    b=1
+    if n==1:
+        print(a)
+    elif n>=2:
+        print(a)
+        print(b)
+        for i in range(n-2):
+            c=a+b
+            print(c)
+            a=b
+            b=c
+    
+n = int(input())
+fib(n)

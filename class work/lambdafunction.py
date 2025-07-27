@@ -5,7 +5,7 @@ print(squ(n))
 
 n=5
 eo = lambda n: "Even" if n % 2==0 else "odd"
-print(eo)
+print(eo(n))
 
 
 #map
